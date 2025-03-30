@@ -1,4 +1,4 @@
-Projeto de criação de uma API Rest que serviria para um aplicativo de clima.
+Projeto de criação de uma API Rest que serviria para um aplicativo de clima. Feito seguindo um projeto de código da DIO
 
 ## Diagrama De Classes
 ```mermaid
