@@ -3,39 +3,46 @@ Projeto de criação de uma API Rest que serviria para um aplicativo de clima.
 ## Diagrama De Classes
 ```mermaid
 classDiagram
+    class User {
+        +long id
+        +String name
+        +String email
+    }
+    
     class Location {
-        +string country
-        +string state
-        +string city
-        +string district
+        +String country
+        +String state
+        +String city
+        +String district
     }
-    
+
     class Weather {
-        +string scale
-        +string weatherState
-        +number temperature
-        +number feltTemperature
-        +number windSpeed
-        +number airPressure
-        +number humidity
+        +String scale
+        +String weatherState
+        +int temperature
+        +int feltTemperature
+        +int windSpeed
+        +int airPressure
+        +int humidity
     }
     
-    class Time {
-        +number currentHour
-        +number currentMinute
-        +number sunriseHour
-        +number sunriseMinute
-        +number sunsetHour
-        +number sunsetMinute
+    class TimeData {
+        +int currentHour
+        +int currentMinute
+        +int sunriseHour
+        +int sunriseMinute
+        +int sunsetHour
+        +int sunsetMinute
     }
     
     class Root {
-        +Location location
+        +User user
         +Weather weather
-        +Time time
+        +TimeData time
     }
-    
-    Root --> Location
+
+    User --> Location
+    Root --> User
     Root --> Weather
-    Root --> Time
+    Root --> TimeData
 ```
