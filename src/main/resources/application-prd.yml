@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://switchback.proxy.rlwy.net:10559/railway
+    username: postgres
+    password: fHUnaVzVzcPDAidwGHjjJdASaPBXfcps
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
