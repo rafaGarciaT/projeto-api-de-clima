@@ -9,7 +9,7 @@ import rtg.weather.app.rest.api.service.UserService;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 
     private final UserService userService;
